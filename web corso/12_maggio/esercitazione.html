@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      
+        <title> Servizio di registrazione </title>
+      
+    </head>
+    <body>
+        <div>   <h1> Benvenuto </h1> </div>
+        <div> <p>Compila il modulo per registrarti </p> </div>
+
+        <div id="registrazione" class="container">
+            <h2> Modulo di registrazione </h2>
+              
+            <!-- form è un elemento che permette di raccogliere dati dagli utenti e inviarli al server -->
+             <!-- action specifica l'URL a cui inviare i dati del modulo -->
+             <!-- method specifica il metodo HTTP da utilizzare per inviare i dati (GET o POST sono i più comuni) -->
+            <form action="/submit" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"  placeholder="inserisci il nome" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"  placeholder="inserisci l'email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"  placeholder="inserisci il password" required><br><br>
+
+                <p> seleziona il corso di interesse </p>
+                 <!-- select permette di scegliere un'opzione tra diverse -->
+        <select id="corso" name="corso">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+        </select>
+
+        <!-- checkbox permette di selezionare più opzioni -->
+        <p> seleziona le tecnologie conosciute  </p>
+
+        <input type="checkbox" id="html" name="tecnologie" value="html">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="tecnologie" value="css">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="js" name="tecnologie" value="js">
+        <label for="js">JavaScript</label> <br><br>
+
+
+                <input type="submit" value="Registrati">
+            </form>
+      
+    </body>
+</html>

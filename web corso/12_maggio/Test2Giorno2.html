@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="registrazione e gestione di evento tecnologico">
+        <meta name="author" content="bryton kamte">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Registrazione e gestione di evento tecnologico</title>
+
+    </head>
+    <body>
+<div>
+        <header>
+            <h1> Benvenuto !</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contatti</a></li>
+            </ul>
+        </nav>
+        <!-- main è un elemento che rappresenta il contenuto principale della pagina -->
+        <main>
+            <!-- section è un elemento che rappresenta una sezione del documento -->
+             <!-- article è un elemento che rappresenta un contenuto indipendente all'interno del documento --> 
+            <section>
+                <h2> Evento tecnologico </h2>
+                <h3> Descrizione dell'evento tecnologico. </h3><br>
+                 <p> Data: 15 giugno 2026 e ci saranno più di 100 partecipanti. </p>
+                <img src="trasferimento.jpg" alt="Immagine dell'evento" width="300">   
+                
+            </section>
+            <article>
+                <h2> Dettagli dell'evento </h2>
+                <p> Informazioni dettagliate sull'evento tecnologico. </p>  
+                <video width="320" height="240" controls>
+                    <source src="evento.mp4" type="video/mp4">
+                    
+                </video>
+            </article>
+           
+        </main>
+
+        
+
+    </div>
+    <div>
+        <p> <strong>Programma dell'evento</strong> </p>
+        <table border="1">
+            <tr>
+                <th>Orario</th>
+                <th>Attività</th>
+            </tr>
+            <tr>
+                <td>09:00 - 10:00</td>
+                <td>Introduzione all'evento</td>
+            </tr>
+            <tr>
+                <td>10:00 - 12:00</td>
+                <td>Sessione di lavoro</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+    <span> <strong>Iscriviti all'evento!!</strong> </span>
+    </div>
+    <div>
+        <h2> Modulo di registrazione </h2>
+         <!-- form è un elemento che permette di raccogliere dati dagli utenti e inviarli al server -->
+         <!-- action specifica l'URL a cui inviare i dati del modulo -->
+         <!-- method specifica il metodo HTTP da utilizzare per inviare i dati (GET o POST sono i più comuni) -->
+
+        <form action="/submit" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"  placeholder="inserisci il nome" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"  placeholder="inserisci l'email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"  placeholder="inserisci il password" required><br><br>
+
+            <!-- checkbox permette di selezionare più opzioni -->
+        <p> seleziona le tecnologie conosciute  </p>
+
+        <input type="checkbox" id="html" name="tecnologie" value="html">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="tecnologie" value="css">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="js" name="tecnologie" value="js">
+        <label for="js">JavaScript</label> <br><br>
+
+           <!-- select permette di scegliere un'opzione tra diverse -->
+        <p> Seleziona il tuo status </p>
+        <select id="corso" name="corso" required>
+            <option value="studente">Studente</option>
+            <option value="professionista">Professionista</option>
+            <option value="altro">Altro</option>
+        </select><br><br> 
+
+            <button type="submit">Registrati</button>
+        </form>
+            <!-- checkbox permette di selezionare più opzioni -->
+        <!-- footer permette di definire il footer della pagina -->
+        <footer>
+            <p> Copyright 2026 </p>
+        </footer>
+    </div>
+    </body>
+</html>

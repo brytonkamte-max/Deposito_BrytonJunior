@@ -1,0 +1,34 @@
+/* p è il selezionatore per gli elementi <p> */
+
+
+
+/* font-size è la proprietà che definisce la dimensione del testo */
+p
+
+{color: blue; /*color è la proprietà che definisce il colore del testo */
+}
+/* h1 è il selezionatore per gli elementi <h1> */
+h1{
+    font-size: 32px; /* font-size è la proprietà che definisce la dimensione del testo */
+}
+/* div è il selezionatore per gli elementi <div> */
+div{
+    background-color: lightgray; /* background-color è la proprietà che definisce il colore di sfondo */
+}
+
+.evidenziato { /* .evidenziato è un selettore di classe, che si applica agli elementi con la classe "evidenziato" */
+background-color: yellow; /* background-color è la proprietà che definisce il colore di sfondo */
+}
+
+#TitoloImportante { /* #TitoloImportante è un selettore di ID, che si applica all'elemento con l'ID "TitoloImportante" */
+font-size: 24px; /* font-size è la proprietà che definisce la dimensione del testo */
+}
+
+
+div p { /* div p è un selettore discendente, che si applica agli elementi <p> all'interno di un elemento <div> */
+color: green; /* color è la proprietà che definisce il colore del testo */
+}
+
+a:hover { /* a:hover è un selettore di pseudo-classe, che si applica agli elementi <a> quando vengono passati sopra con il mouse */
+color: red; /* color è la proprietà che definisce il colore del testo */
+}
