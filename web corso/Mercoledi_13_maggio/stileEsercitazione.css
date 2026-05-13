@@ -1,0 +1,52 @@
+#prova {
+    
+    padding: 10px;
+    margin: 10px;
+    background-color: aqua;
+   
+}
+.prova2 {
+    padding: 20px;
+    margin: 20px;
+    border: 10px solid black;
+    background-color: lightgray;
+
+/*la percentuale è relativa alla dimensione del contenitore padre, mentre rem ed em sono unità relative alla dimensione del font. Rem è relativo alla dimensione del font radice (root), mentre em è relativo alla dimensione del font dell'elemento corrente. */    
+}
+.provaPercentuale {
+    width: 30%;
+    height: 100px;
+    background-color: pink;
+}
+.provaRem {
+    width: 10rem;
+    height: 50px;
+    background-color: orange;
+}
+.provaEm {
+    width: 60em;
+    height: 50px;
+    background-color: purple;
+}
+/* il testo all'interno del div sarà verde, ma se c'è un paragrafo all'interno del div, il testo del paragrafo sarà rosso a causa della regola precedente. */
+.provaModificatoriTesto {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.provaColore {
+    background-color: lightblue;
+}
+
+.provaConflitto {
+    color: red;
+}
+/* la classe provaConflitto definisce un elemento con il testo verde, ma se c'è una regola precedente che imposta il colore del testo a rosso, allora il testo sarà non sara rosso perche l'ultima regola ha la priorità */   
+.provaConflitto {
+    color: green;
+}
+/*il selettore hover cambia il colore del testo a giallo quando l'utente passa il mouse sopra l'elemento con l'id "hover". */
+#hover:hover {
+    color: yellow;
+}
