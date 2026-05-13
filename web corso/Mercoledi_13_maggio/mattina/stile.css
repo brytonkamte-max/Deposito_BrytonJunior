@@ -1,0 +1,71 @@
+
+
+p
+{
+    color: blue;
+}
+ /* Il secondo blocco di codice sovrascrive il primo, quindi il testo dei paragrafi sarà rosso. */
+
+
+/* l'ereditarietà si applica ai figli solo se non c'è una regola più specifica */
+div
+{
+    color: green;
+}
+/* Il testo all'interno del div sarà verde, ma se c'è un paragrafo all'interno del div, il testo del paragrafo sarà rosso a causa della regola precedente. */
+.testo
+{
+    font-weight: bold;
+}
+#titolo
+{
+    font-size: 24px;
+}
+body
+{
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+}
+/* Il corpo della pagina avrà uno sfondo grigio chiaro e utilizzerà il font Arial. */
+.box
+{
+    background-color: lightblue;
+    padding: 20px;
+   
+}
+h1
+{
+    color: darkblue;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+p
+{
+    color: darkred;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+/* la classe pippo definisce un elemento con una larghezza di 200 pixel, un'altezza di 100 pixel e uno sfondo giallo. */
+.pippo
+{
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    
+}
+/* la classe provaPadding definisce un elemento con un padding di 20 pixel e uno sfondo verde chiaro. */
+.provaPadding
+{
+    padding: 20px;
+    background-color: lightgreen;
+}
+.provaBorder
+{
+    border: 5px solid black;
+    
+}
+/* la classe provaBorder definisce un elemento con un bordo nero di 5 pixel e un padding di 10 pixel. */
+.provaMargin
+{
+    margin: 30px;
+}

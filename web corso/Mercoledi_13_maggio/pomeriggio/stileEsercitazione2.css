@@ -1,0 +1,63 @@
+
+/* sto applicando sullo seletor ContainerGrid un aspetto grid per tutta la pagina */
+.containerGrid
+{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+    gap: 10px;
+}
+/*sto applicando sul conenuto uan flexbox per allineare al centro i contenuti  e gli elementi devono apparire orizontalemente */
+.containerFlex
+{
+    /* display: flex; permette di mettere gli elementi in fila */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    background-color: lightgray;
+}
+/* sto applicando sul itemFlex un aspetto flex per allineare al centro i contenuti  e gli elementi devono apparire orizontalemente */
+.itemFlex
+{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: steelblue;
+    justify-content: center;
+    align-items: center;
+  
+}
+/* sto applicando sul contenitore una grid per posizionare gli elementi in modo specifico */
+.contenitore
+{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: lightgray;
+    
+}
+/* sto applicando sul bottone una posizione assoluta per posizionarlo in modo specifico all'interno del contenitore */
+.bottone
+{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    width: 100px;
+    height: 50px;
+    background-color: coral;
+}
+
+/* sto applicando sul header una larghezza massima per adattarsi al contenuto */
+.header
+{
+    width: max-content;
+   
+   
+}
+.footer
+{
+    width: min-content;
+    
+}
