@@ -1,0 +1,101 @@
+
+.body
+{
+    font-family: Arial, sans-serif;
+    margin: 8px;
+    padding: 12px;
+}
+/* sto applicando le variabili globali per definire i colori e la spaziatura */
+
+
+/*root serve per definire delle variabili globali che possono essere utilizzate in tutto il documento*/
+:root {
+    --color-principale: steelblue;
+    --color-testo: white;
+    --spaziatura: 20px;
+}
+/*sto applicando al header un colore di sfondo e un padding che prende dalla variabile globale spaziatura, e un allineamento del testo che prende dalla variabile globale spaziatura */
+.header {
+    background-color: var(--color-principale);
+    padding: var(--spaziatura);
+    text-align: var(--spaziatura);
+}
+/* sto applicando al selettore h1 un colore che prende dalla variabile globale color-testo */
+h1
+{
+    color: var(--color-testo);
+}
+
+/* sto applicando alla classe pippo un colore di sfondo e un padding che prende dalla variabile globale spaziatura */
+.pippo::before
+{
+    content: "News";
+   
+    color: red;
+}
+.pippo::after
+{
+    content: " Grazie per la tua attenzione.";
+    color: green;
+}
+
+.promozioni
+{
+    background-color: var(--color-principale);
+    padding: var(--spaziatura);
+    color: var(--color-testo);
+    text-align: center;
+    transition: transform 0.5s;
+    animation: cambioColore 3s infinite;
+}
+@keyframes cambioColore {
+    0% {
+        background-color: var(--color-principale);
+    }
+    50% {
+        background-color: coral;
+    }
+    100% {
+        background-color: var(--color-principale);
+    }
+}
+/* sto applicando alla classe promozioni dei pseudo-elementi per inserire del contenuto prima e dopo l'elemento, e una transizione per cambiare il colore di sfondo e del testo al passaggio del mouse */
+/*per esempio before serve per inserire del contenuto prima dell'elemento*/
+.promozioni::before
+{
+    content: "Offerte speciali: ";
+    color: yellow;
+}
+/*mentre after serve per inserire del contenuto dopo l'elemento*/
+.promozioni::after
+{
+    content: " Non perdere le nostre promozioni!";
+    color: orange;
+}
+/* sto applicando alla classe promozioni una transizione per cambiare il colore di sfondo e del testo al passaggio del mouse */
+.promozioni:hover
+{
+    transform: scale(1.1);
+}
+/*transform: scale(1.1); permette di ingrandire l'elemento al passaggio del mouse, creando un effetto di zoom. La transizione definita in precedenza permette di rendere questo effetto più fluido e piacevole alla vista. */
+
+
+
+/* visibility: hidden; nasconde l'elemento ma mantiene lo spazio occupato */
+.box2 {
+  visibility: hidden;
+  background-color: lightgreen;
+}
+
+/* display: none; nasconde completamente l'elemento, non occupa spazio */
+.box3 {
+    display: none;
+    background-color: coral;
+}
+/*la differenza tra visibility: hidden e display: none è che la prima nasconde l'elemento ma mantiene lo spazio occupato, mentre la seconda nasconde completamente l'elemento e non occupa spazio. */
+
+.footer
+{
+    
+    text-align: center;
+}

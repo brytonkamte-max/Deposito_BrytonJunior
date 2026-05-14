@@ -1,0 +1,76 @@
+/*root serve per definire delle variabili globali che possono essere utilizzate in tutto il documento*/
+:root {
+    --color-principale: steelblue;
+    --color-testo: white;
+    --spaziatura: 20px;
+}
+/* sto applicando alla classe card un aspetto di una card con un padding e un colore di sfondo */
+.card
+{
+   
+    padding: var(--spaziatura);
+    background-color: var(--color-principale);
+    color: white;
+}
+/* sto applicando al selettore h1 un colore che prende dalla variabile globale color-testo */
+h1
+{
+    color: var(--color-testo);
+}
+
+/*pseudo elementi css */
+/* before e after sono pseudo elementi che permettono di inserire del contenuto prima o dopo un elemento, senza dover modificare il codice HTML */
+.messaggio::before
+{
+    content: "Attenzione: ";
+    color: red;
+}
+.messaggio::after
+{
+    content: " Grazie per la tua attenzione.";
+    color: green;
+}
+/*animazioni css e transizioni */
+/* sto applicando alla classe box un aspetto di un quadrato con una transizione e un'animazione che cambia il colore di sfondo */
+.box {
+width: 100px;
+height: 100px;
+background-color: steelblue;
+transition: transform 0.5s;
+animation: cambioColore 3s infinite;
+}
+
+.box:hover {
+transform: scale(1.2);
+}
+
+@keyframes cambioColore {
+0% {
+background-color: steelblue;
+}
+
+50% {
+background-color: coral;
+}
+
+100% {
+background-color: steelblue;
+}
+}
+
+/* display: block; permette di visualizzare l'elemento come un blocco, occupando tutta la larghezza disponibile */
+.box1 {
+    display: block;
+    background-color: lightblue;
+}
+/* visibility: hidden; nasconde l'elemento ma mantiene lo spazio occupato */
+.box2 {
+  visibility: hidden;
+  background-color: lightgreen;
+}
+
+/* display: none; nasconde completamente l'elemento, non occupa spazio */
+.box3 {
+    display: none;
+    background-color: coral;
+}
