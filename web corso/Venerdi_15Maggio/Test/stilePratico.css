@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/* Sto stilizzando l'header per renderlo più accattivante*/
+header {
+    
+    background-color: #c73998;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+/* Sto centrando il menu di navigazione*/
+nav {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Sto stilizzando la sezione dei contatti per renderla più leggibile*/
+.contact {
+    background-color: #da2ab6;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Sto centrando i dettagli del fiorario e l'immagine per renderli più armoniosi*/
+.dettagliFiori {
+   justify-content: center;
+    text-align: center;
+}
+/* Sto centrando la sezione dei servizi offerti per renderla più ordinata e facile da leggere*/
+.offerti {
+    display: grid;
+  justify-content: center;
+    text-align: center;
+}
+/* Sto centrando il footer per renderlo più equilibrato e professionale*/
+.footerr {
+    justify-content: center;
+    text-align: center;
+}
+/* Sto applicando delle variabili globali per definire i colori e la spaziatura*/
+.root{
+    --color-principale: #4539c7;
+    --color-testo: #fff;
+    --spaziatura: 20px;
+}
+/*renderizzo più accattivante la sezione dei servizi offerti*/
+.offerti h2
+{
+    background-color: var(--color-principale);
+    padding: var(--spaziatura);
+    color: var(--color-testo);
+    text-align: center;
+    transition: transform 0.5s;
+    animation: cambioColore 3s infinite;
+}
+/* Sto definendo un'animazione per cambiare il colore di sfondo della sezione dei servizi offerti */
+@keyframes cambioColore {
+    0% {
+        background-color: var(--color-principale);
+    }
+    50% {
+        background-color: rgb(255, 80, 95);
+    }
+    100% {
+        background-color: var(--color-principale);
+    }
+}
+/* Sto applicando alla sezione dei servizi offerti una transizione per cambiare il colore di sfondo e del testo al passaggio del mouse */
+.offerti h2:hover
+{
+    transform: scale(1.1);
+}
+/*sto aggiungendo dei pseudo-elementi alla sezione dei servizi offerti per inserire del contenuto dopo l'elemento*/
+.offerti h2::after
+{
+    content: " !";
+    color: orange;
+}
+/*sto aggiungendo dei pseudo-elementi alla sezione dei servizi offerti per inserire del contenuto prima dell'elemento*/
+.offerti h2:before
+{
+    content: "Servizi ";
+    color: purple;
+}
+
