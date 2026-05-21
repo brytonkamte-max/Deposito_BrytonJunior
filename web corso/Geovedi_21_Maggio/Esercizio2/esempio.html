@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Libreria Digiatale</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+   <header class="header">
+<h1>LIBRERIA DIGITALE</h1>
+
+<!--hamburger-->
+<button id="menuButton" class="menu-button">
+☰
+</button>
+
+<nav id="menu" class="menu">
+<a href="#">Home</a>
+<a href="#">Contatti</a>
+</nav>
+</header>
+
+<main class="container">
+    <p id="intro">Benvenuto alla nostra pagina di registrazione di nuovi libri</p>
+<section class="form">
+
+    <form id="formLibro" class="formm">
+
+<label for="TitoloLibro">
+Titolo del libro
+</label>
+
+<input type="text" id="TitoloLibro" required>
+
+<label for="autore">
+Autore
+</label>
+
+<input type="text" id="autore" required>
+
+<label for="genere">
+Genere
+</label>
+
+<input type="text" id="genere">
+
+<label for="AnnoPublicazione">
+Anno di pubblicazione
+</label>
+
+<input type="number" id="AnnoPublicazione" required>
+
+<label for="descrizione">
+Breve Descrizione
+</label>
+
+<input type="text" id="descrizione">
+
+
+
+
+
+<button type="submit">
+Aggiungi libro
+</button>
+
+</form>
+
+<div id="risultato"></div>
+
+
+</section>
+
+   
+</main>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
