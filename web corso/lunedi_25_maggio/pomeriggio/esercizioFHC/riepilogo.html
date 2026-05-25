@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Store - Riepilogo Statistiche</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+    <header>
+        <h1>🧸 TOY STORE - GESTIONE AMMINISTRATIVA</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Nuovo Giocattolo</a></li>
+                <li><a href="elenco.html">Elenco Catalogo</a></li>
+                <li><a href="riepilogo.html" class="active">Riepilogo e Statistiche</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Analisi e Reportistica Magazzino</h2>
+        
+        <div class="container card-riepilogo">
+            <p><strong>Numero Totale Giocattoli Presenti:</strong> <span id="totProdotti">0</span></p>
+            <p><strong>Prezzo Medio degli Articoli:</strong> <span id="prezzoMedio">0.00</span> €</p>
+            <p><strong>Categorie Totali Disponibili:</strong> <span id="listaCategorie">Nessuna</span></p>
+            <p><strong>Elenco Prodotti Non Disponibili:</strong> <span id="listaEsauriti">Nessuno</span></p>
+        </div>
+
+        <div class="controlli-globali">
+            <button id="temaButton">Cambia Interfaccia (Tema)</button>
+            <p id="temaTesto"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sistema Gestionale Toy Store. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

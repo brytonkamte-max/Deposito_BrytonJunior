@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Store - Inserimento Giocattoli</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+    <header>
+        <h1>🧸BRYTON TOY STORE - GESTIONE AMMINISTRATIVA</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Nuovo Giocattolo</a></li>
+                <li><a href="elenco.html">Elenco Catalogo</a></li>
+                <li><a href="riepilogo.html">Riepilogo e Statistiche</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Registra un Nuovo Giocattolo</h2>
+            <p>Compila tutti i campi obbligatori per inserire l'articolo nell'archivio JSON locale.</p>
+            
+            <form id="formGiocattolo">
+                <label for="nome">Nome Giocattolo:</label>
+                <input type="text" id="nome" required>
+
+                <label for="categoria">Categoria di Gioco:</label>
+                <input type="text" id="categoria" required>
+
+                <label for="prezzo">Prezzo di Vendita (€):</label>
+                <input type="number" id="prezzo" step="0.01" min="0" required>
+
+                <label for="eta">Età Consigliata (Anni):</label>
+                <input type="number" id="eta" min="0" required>
+
+                <label for="disponibilita">Stato Disponibilità:</label>
+                <select id="disponibilita">
+                    <option value="disponibile"> Disponibile in Magazzino</option>
+                    <option value="non_disponibile"> Non Disponibile / Esaurito</option>
+                </select>
+
+                <button type="submit" id="salvaButton">Salva Prodotto</button>
+            </form>
+        </div>
+
+        <div class="controlli-globali">
+            <button id="temaButton">Cambia Interfaccia (Tema)</button>
+            <button id="resetButton">Svuota Intero Database</button>
+            <p id="temaTesto"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sistema Gestionale Toy Store. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
