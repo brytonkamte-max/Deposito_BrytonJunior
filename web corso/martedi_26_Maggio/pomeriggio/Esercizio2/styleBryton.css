@@ -1,0 +1,100 @@
+/* Struttura di Base e Sfondo pagina */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f8fafc;
+    margin: 0;
+    padding: 0;
+    color: #1e293b;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Stile della Card di Presentazione */
+.card-contatti {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    padding: 35px 25px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+/* Foto Profilo Circolare */
+.foto-profilo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #0284c7; /* Bellissimo azzurro tech */
+}
+
+/* Testi ed Elementi della Card */
+.card-contatti h3 {
+    font-size: 1.4em;
+    margin: 10px 0 5px 0;
+    color: #0f172a;
+}
+
+.ruolo {
+    color: #64748b;
+    font-weight: 600;
+    font-size: 1.05em;
+    margin: 0 0 10px 0;
+}
+
+.laurea {
+    font-size: 0.9em;
+    color: #0284c7;
+    font-weight: 500;
+    margin: 10px 0 0 0;
+    line-height: 1.4;
+}
+
+/* Linea divisoria minimale */
+.card-contatti hr {
+    border: 0;
+    border-top: 1px solid #f1f5f9;
+    margin: 20px 0;
+}
+
+.card-contatti h4 {
+    text-align: left;
+    margin: 0 0 10px 5px;
+    color: #334155;
+    font-size: 1em;
+}
+
+/* Liste (Competenze e Recapiti) */
+.competenze-lista, 
+.recapiti-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.competenze-lista li, 
+.recapiti-lista li {
+    padding: 6px 8px;
+    font-size: 0.95em;
+    color: #475569;
+}
+
+.recapiti-lista li {
+    background-color: #f8fafc;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #f1f5f9;
+}

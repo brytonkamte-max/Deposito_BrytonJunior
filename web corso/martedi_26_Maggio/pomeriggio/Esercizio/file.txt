@@ -1,0 +1,1 @@
+Ciao! Questo è il messaggio personalizzato letto dal file di testo.

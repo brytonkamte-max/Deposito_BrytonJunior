@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calcolatrice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styleBryton.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calcolatrice</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/bryton.html">Info</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <input type="number" id="numero1" placeholder="Inserisci il primo numero">
+        <input type="number" id="numero2" placeholder="Inserisci il secondo numero">
+
+        <p id="risultato"></p>
+        <br>
+        <b>
+        <b>Operazioni</b>
+        
+        
+        <button id="somma" onclick="calcola('+')">Somma</button>
+        <button id="sottrazione" onclick="calcola('-')">Sottrazione</button>
+        <button id="moltiplicazione" onclick="calcola('*')">Moltiplicazione</button>
+        <button id="divisione" onclick="calcola('/')">Divisione</button>
+        <br>
+        <br>
+        
+        
+    </main>
+        
+    <script src="script.js"></script>
+</body>
+</html>
