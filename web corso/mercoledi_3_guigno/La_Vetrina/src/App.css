@@ -1,0 +1,50 @@
+/* CSS: Usa Flexbox per distanziare il logo dal menu e applica un colore di sfondo. */
+
+header {
+  display: flex; /* Usa Flexbox per il layout */
+  justify-content: space-between; /* Distanza tra logo e menu */
+  align-items: center; /* Allinea verticalmente al centro */
+  padding: 20px;
+  background-color: #333; /* Colore di sfondo del header */
+  color: white;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Colore di sfondo della pagina */
+}
+
+/* Aggiungi stili per il footer  --CSS: Allinea il testo al centro e dai un distacco visivo dal resto della pagina.--è l'utlimo elemento della pagina */
+footer {
+
+  text-align: center; /* Allinea il testo al centro */
+  padding: 20px;
+  background-color: #333; /* Colore di sfondo del footer */
+  color: white;
+  margin-top: 40px; /* Distacco visivo dal resto della pagina */
+  /* è l'ultimo elemento della pagina */
+  
+
+}
+
+/* Usa Flexbox o CSS Grid nel componente principale per fare in modo che le schede si dispongano su più colonne su desktop e vadano in verticale su mobile. */
+/* CSS: Usa Flexbox per disporre le schede su più colonne su desktop e in verticale su mobile. */ 
+.main {
+  display: flex; /* Usa Flexbox per il layout */
+  flex-wrap: wrap; /* Permette alle schede di andare su più righe */
+  gap: 20px; /* Spazio tra le schede */
+  padding: 20px;
+}
+.card {
+  background-color: white; /* Colore di sfondo delle schede */
+  border: 1px solid #ddd; /* Bordo leggero per le schede */
+  border-radius: 5px; /* Angoli arrotondati */
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 40px); /* Tre colonne su desktop, con spazio per il gap */
+}
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%; /* Una colonna su mobile */
+  }
+}
